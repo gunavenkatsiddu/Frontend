@@ -1,0 +1,32 @@
+.card{
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0,0,1,1);
+}
+.menu{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap:10px;
+
+}
+img:hover{
+    transform:scale(1.5);
+    transition: transform 0.3 ease;
+}
+#btn{
+    background-color: gray;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color:red;
+    transform: scale(1.5);
+    transition: transform backgrpound-color 0.3s ease;
+}
+nav a:hover{
+    color: red;
+    transform: scale(1.2);
+    transition: transform color 0.3s ease;
+    
+}
+.navbar{
+    justify-content: space a-space-around;
+}

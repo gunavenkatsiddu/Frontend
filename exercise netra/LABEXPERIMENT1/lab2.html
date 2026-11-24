@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hospital Appointment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab2.css">
+</head>
+
+<body>
+
+<header>
+    <h1>City Care Hospital</h1>
+    <p>Your Health Is Our Priority</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#appointment">Appointment</a>
+</nav>
+
+<main>
+
+<section id="home">
+    <h2>Welcome to Our Hospital</h2>
+    <p>We provide quality healthcare services.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <article>
+        <h3>Emergency Care</h3>
+        <p>24/7 emergency medical services.</p>
+    </article>
+    <article>
+        <h3>General Checkup</h3>
+        <p>Regular health checkups for patients.</p>
+    </article>
+</section>
+
+<section id="doctors">
+    <h2>Our Doctors</h2>
+    <article>
+        <h3>Dr. Ravi</h3>
+        <p>Cardiologist</p>
+    </article>
+    <article>
+        <h3>Dr. Priya</h3>
+        <p>General Physician</p>
+    </article>
+</section>
+
+<aside>
+    <p>Emergency Contact: 108</p>
+</aside>
+
+<section id="appointment">
+    <h2>Book an Appointment</h2>
+
+    <form>
+        <label for="name">Patient Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="doctor">Select Doctor:</label>
+        <select id="doctor" required>
+            <option value="">Choose Doctor</option>
+            <option>Dr. Ravi</option>
+            <option>Dr. Priya</option>
+        </select>
+
+        <label for="date">Appointment Date:</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 City Care Hospital</p>
+</footer>
+
+</body>
+</html>
