@@ -1,27 +1,56 @@
-    .container{
-    display:grid;
-    grid-template-areas:
-    "header header"
+.container{
+  display:grid;
+   grid-template-areas:
+   "header header"
 
-    "sidebar content"
+   "sidebar content"
 
-    "footer footer";
+   "footer footer ";
 
-    grid-template-columns: 150px 1fr;
+ grid-template-columns: 150px 1fr;
 
-    grid-template-rows: 50px 200px 50px;
+ grid-template-rows: 50px 200px 50px;
 
-    gap: 5px;
+ gap: 5px;
+ 
 }
+
 .header{
-    grid-area: "header";
-    background-color: rgb(12, 97, 26);
-    text-align: center;
-    padding: 10px;
+  grid-area: header;
+  background-color: lightblue;
+  text-align: center;
+  padding: 10px;
 }
 .footer{
-    grid-column:"footer";
-    background-color: rgb(216, 75, 150);
-    text-align: center;
-    padding: 10px;
+  grid-area: footer;
+  background-color: lightgreen;
+  text-align: center;
+  padding: 10px;
+}
+.sidebar{
+  grid-area: sidebar;
+  background-color: lightcoral;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid black;
+  border-width: 4px;
+  transition: border-width;
+}
+.content{
+  grid-area: content;
+  background-color: lightyellow;
+  text-align: center;
+  padding: 10px;
+}
+
+#submitbtn{
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  }
+#submitbtn:hover{
+    background-color: Red;
+    transform:scale(1.5);
+    transition: transform background-color 0.3s ease;
+   
 }

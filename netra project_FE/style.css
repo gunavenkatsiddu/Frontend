@@ -24,7 +24,6 @@ button {
 button:hover {
     background: #1765c3;
 }
-/* Creates the top navigation bar */
 .topbar {
     min-height: 82px;
     display: flex;
@@ -81,8 +80,50 @@ nav a:hover {
     background: #39d6a0;
     border-radius: 50%;
 }
-#clock {
-    color: white;
-    margin-left: 10px;
-    font-family: monospace;
+
+.page {
+    padding: 35px 5%;
+}
+.page p {
+    color: #91a8c5;
+}
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 14px;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+.kpi-card {
+    background: #15263d;
+    border: 1px solid #294563;
+    border-radius: 10px;
+    padding: 14px;
+    height: 140px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.kpi-card h4 {
+    color: #9db3cc;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.kpi-card h2 {
+    color: #4da0ff;
+    font-size: 24px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.kpi-card p {
+    color: #a9bdd5;
+    font-size: 13px;
+    margin: 0;
 }

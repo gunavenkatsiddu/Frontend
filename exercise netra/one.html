@@ -1,0 +1,72 @@
+<html>
+    <body>
+        <h2>ENTER YOUR NAME</h2>
+        <input type="text" id="username" placeholder="ENTER YOUR NAME"/>
+        
+        <button onclick="greet()">SUBMIT</button>
+
+        <h3 id="result"></h3>
+        
+        <script>
+            function greet(){
+                let name = document.getElementById("username").value;
+
+    
+                document.getElementById("result").innerHTML= 
+                "HELLO " + NAME + "Welcome";
+        }
+            
+        </script>
+
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>Addtion of two numbers</h2>
+
+        <input type="number" id="num1" placeholder="Enter first number" /><br /><br />
+         <input type="number" id="num2" placeholder="Enter second number" /><br /><br />
+         <button onclick="addNumbers()">Add</button>
+         <button onclick="mulNumbers()">Multiply</button>
+
+         <h3 id="result"></h3>
+
+         <script>
+            function addNumbers(){
+              let a = Number(document.getElementById("num1").value);
+               let b = Number(document.getElementById("num2").value);
+              let sum = a + b;
+              document.getElementById("result").innerHTML = "Addition of a , b = " + sum;
+            
+            }
+             function mulNumbers(){
+              let a = Number(document.getElementById("num1").value);
+               let b = Number(document.getElementById("num2").value);
+              let sum = a * b;
+              document.getElementById("result").innerHTML = "Multiplication of a , b = " + sum;
+            
+            }
+         </script>
+    </body>
+</html>
+         <html>
+            <head>
+                <title>Button Click</title>
+            </head>
+            <body>
+            <h2> Change Background Color</h2>
+            <button onclick="changeColor('red')">Red</button>
+            <button onclick="changeColor('green')">Green</button>
+            <button onclick="changeColor('pink')">Pink</button>
+            <script>
+                function changeColor(color){
+                    document.body.style.backgroundColor = color;
+                }
+            </script>
+            </body>
+
+
+         </html>
+
+    
